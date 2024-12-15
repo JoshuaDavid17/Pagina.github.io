@@ -1,0 +1,7 @@
+[
+  { "id": "div1", "nombre": "Imagen 1", "url": "https://via.placeholder.com/150" },
+  { "id": "div2", "nombre": "Imagen 2", "url": "https://via.placeholder.com/150" },
+  { "id": "div3", "nombre": "Imagen 3", "url": "https://via.placeholder.com/150" },
+  { "id": "div4", "nombre": "Imagen 4", "url": "https://via.placeholder.com/150" },
+  { "id": "div5", "nombre": "Imagen 5", "url": "https://via.placeholder.com/150" }
+]

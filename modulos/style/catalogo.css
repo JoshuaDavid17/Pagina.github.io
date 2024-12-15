@@ -1,0 +1,80 @@
+.container{
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    padding: 10px;
+    /* background-attachment: fixed;
+    background-image: url(diseño-tienda-de-ropas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+
+@keyframes aparecer {
+    from {
+
+        opacity: 0.2;
+        
+    }
+    to {
+
+        opacity: 1;
+        
+        
+    }
+}
+
+
+.img{
+
+    background-attachment: fixed;
+    position: relative;
+    border: 2px solid black;
+    animation: aparecer .7s forwards;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  border-radius .2s;
+   
+}
+
+.img::after{
+
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    right:0;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity .5s linear;
+
+}
+
+.img:hover{
+
+    border-radius: 15px;
+    transition:  border-radius .2s;
+}
+
+.img:hover::after{
+
+    opacity: 1;
+    
+}
+
+ 
+.img:first-child{
+
+    grid-row: span 2;
+}
+
+.img:last-child{
+
+    grid-column: span 2;
+}

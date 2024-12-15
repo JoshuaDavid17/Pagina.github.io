@@ -1,0 +1,49 @@
+ 
+.container-img{
+
+    display: flex;
+    justify-content: center;
+    animation: aparecer-logo 1s both normal;
+    width: 100%;
+   
+}
+
+@keyframes aparecer-logo{
+
+    from{
+
+        opacity: 0.3;
+        transform: translateY(100px);
+        scale: 1.5;
+
+    }to{
+
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container-img img{
+
+    height: 40%;
+    border-radius: 50%;
+    border: 2px solid black;
+    animation: colores 3s linear infinite;
+} 
+
+
+@keyframes colores{
+
+    0%{
+
+        box-shadow: 0 0 15px blue;
+
+    }50%{
+
+        box-shadow: 0 0 15px rgb(196, 10, 233);
+
+    }100%{
+        
+        box-shadow: 0 0 15px rgb(10, 219, 122);
+    }
+}
